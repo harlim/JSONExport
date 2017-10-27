@@ -257,7 +257,7 @@ class FilesContentBuilder{
     */
     func propertyForValue(_ value: AnyObject, jsonKeyName: String) -> Property
     {
-        let nativePropertyName = propertyNativeName(jsonKeyName)
+        let nativePropertyName = jsonKeyName;//propertyNativeName(jsonKeyName)
         var type = propertyTypeName(value, lang:lang)
 //        var isDictionary = false
 //        var isArray = false
